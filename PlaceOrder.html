@@ -1,0 +1,1739 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Elixir - HTML Template</title>
+    <!-- GOOGLE FONTS -->
+    <link href='http://fonts.googleapis.com/css?family=Yellowtail%7cCabin:400,500,600,700,400italic,700italic%7cLibre+Baskerville:400italic%7cGreat+Vibes%7cOswald:400,300,700%7cOpen+Sans:600italic,700'
+        rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700' rel='stylesheet'
+        type='text/css'>
+
+    <!-- META TAGS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- CSS STYLESHEETS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/elixir.css" />
+    <link href="js/owl-carousel/owl.carousel.css" rel="stylesheet">
+    <link href="js/owl-carousel/owl.theme.css" rel="stylesheet">
+    <link href="js/owl-carousel/owl.transitions.css" rel="stylesheet">
+    <link href="css/YTPlayer.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/swipebox.css">
+
+
+
+    <!--[if lt IE 9]>
+        <meta http-equiv="X-UA-Compatible" content="IE=8" />
+        <script src="./js/html5shiv.js"></script>
+        <script src="./js/respond.js"></script>
+    <![endif]-->
+
+    <style>
+        .active {
+            background-color: #309f52;
+            border-radius: 2px;
+        }
+
+        section.menu .title {
+            margin-top: 0px !important;
+        }
+
+        section.menu .title:after {
+            content: none !important;
+        }
+
+        section.menu .title:before {
+            content: none !important;
+        }
+
+        .mt-8 {
+            margin-top: 8rem !important;
+        }
+
+        .h-43 {
+            height: 43px;
+        }
+
+        .col-req {
+            -webkit-box-flex: 0;
+            -ms-flex: 0 0 50%;
+            flex: 0 0 49.3%;
+            max-width: 50%;
+        }
+
+        input {
+            color: black !important;
+        }
+
+        section.menu {
+            background: none;
+        }
+
+        .section {
+            margin-bottom: 0px;
+            min-height: 0px !important;
+        }
+
+        .alert {
+            display: none;
+        }
+
+        #header {
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            z-index: 1001;
+            width: 100%;
+            height: 90px;
+            background-color: #fff !important;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.11);
+            padding-top: 20px;
+        }
+
+        #header .menu-item a {
+            color: #818181;
+        }
+
+        #header.overflow {
+            top: -100px;
+            left: 0px;
+            background-color: #fff !important;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.11);
+            -webkit-transition: all 0.3s ease-in;
+            -o-transition: all 0.3s ease-in;
+            transition: all 0.3s ease-in;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .bg-green-lg:hover {
+            border: 3px solid #309f52;
+            background-color: #309f52 !important;
+            color: white !important;
+            transition: 0.5s all ease;
+            font-size: 25px;
+        }
+
+        .bg-green-lg {
+            border: 3px solid #309f52;
+            background-color: transparent !important;
+            color: #309f52 !important;
+            transition: 0.5s all ease;
+            font-size: 25px;
+        }
+
+        #header.overflow.fixed {
+            top: 0px;
+            position: fixed;
+            z-index: 200;
+        }
+    </style>
+
+</head>
+
+
+
+
+
+<body>
+
+    <div id="mask">
+        <div class="loader">
+            <img src="svg-loaders/tail-spin.svg" alt='loading'>
+        </div>
+    </div>
+
+
+
+    <!-- BEGIN HEADER -->
+    <header id="header" role="banner">
+        <div class="jt_row container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand normal logo" href="#home">
+                    <div class="logo_elixir"></div>
+                </a>
+                <a class="navbar-brand mini" href="#home">
+                    <div class="logo_elixir dark"></div>
+                </a>
+                <a class="navbar-brand mini darker" href="#home">
+                    <div class="logo_elixir dark"></div>
+                </a>
+            </div>
+
+            <!-- BEGIN NAVIGATION MENU-->
+            <nav class="collapse navbar-collapse navbar-right navbar-main-collapse" role="navigation">
+                <ul id="nav" class="nav navbar-nav navigation">
+                    <li class="page-scroll menu-item">
+                        <a href="#home-slider">Home</a>
+                    </li>
+                    <li class="page-scroll menu-item">
+                        <a href="#about">About</a>
+                    </li>
+                    <li class="page-scroll menu-item">
+                        <a href="menu.html">Menu</a>
+                    </li>
+                    <li class="page-scroll menu-item">
+                        <a href="#gallery">Gallery</a>
+                    </li>
+                    <li class="page-scroll menu-item">
+                        <a href="#reservations">Reservations</a>
+                    </li>
+                    <li class="page-scroll menu-item">
+                        <a href="#contact">Location</a>
+                    </li>
+                    <li class="page-scroll menu-item border border-danger">
+                        <a href="Order.html">Order Now</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- END NAVIGATION MENU -->
+        </div>
+    </header>
+    <!-- END HEADER -->
+    <!-- BEGIN MENU SECTION -->
+    <section id="menu" class="section menu">
+        <div class="container mt-8">
+            <div class="row">
+                <div class="col-12 justify-content-center">
+                    <h2 class="section-title">Place Order</h2>
+                    <div class="section-subtitle">
+                        Booking a table has never been so easy with free & instant online restaurant reservations, booking now!!
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9" style="max-height: 800px; overflow:auto">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="title first" style="margin-top:0px !important;padding-top:0px !important">Pizzas</div>
+                            <div class="voffset10"></div>
+                            <div class="subtitle">Exclusive and delicious pizzas</div>
+                        </div>
+                        <div class="col-md-4 mt-4">
+                            <ul class="menu">
+                                <div class="p-4 pb-3 mb-3" style="cursor:pointer;" data-toggle="modal" data-target="#modal1">
+                                    <li>
+                                        <div class="d-flex justify-content-between">
+                                            <h4 class="font-weight-bold">Italian pizza</h4>
+                                        </div>
+                                        <div class="detail">Mozarella, Pomodoro & Parmagiano
+                                            <span class="price">$14.49</span>
+                                        </div>
+                                    </li>
+                                </div>
+                                <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLongTitle">Select Quantity below</h5>
+                                            </div>
+                                            <div class="modal-body">
+                                                <input type="number" />
+                                            </div>
+                                            <div class="modal-footer">
+                                                <a class="p-2 bg-green-lg collapsed btn-block text-center" data-dismiss="modal">
+                                                    Save quantity
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="p-4 pb-3 mb-3" style="cursor:pointer;" data-toggle="modal" data-target="#modal2">
+                                    <li>
+                                        <div class="d-flex justify-content-between">
+                                            <h4 class="font-weight-bold">Jabugo Ham</h4>
+
+                                        </div>
+                                        <div class="detail">Jabugo ham, eggs, cheese & Red Pepper
+                                            <span class="price">$20.50</span>
+                                        </div>
+                                    </li>
+                                </div>
+                                <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLongTitle">Select Quantity below</h5>
+                                            </div>
+                                            <div class="modal-body">
+                                                <input type="number" />
+                                            </div>
+                                            <div class="modal-footer">
+                                                <a class="p-2 bg-green-lg collapsed btn-block text-center" data-dismiss="modal"> Save quantity </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="p-4 pb-3 mb-3" style="cursor:pointer;" data-toggle="modal" data-target="#modal3">
+                                    <li>
+                                        <div class="d-flex justify-content-between">
+                                            <h4 class="font-weight-bold">Cesar</h4>
+
+                                        </div>
+                                        <div class="detail">Cesar sauce, Toasts, cheese & Chicken
+                                            <span class="price">$9.99</span>
+                                        </div>
+                                    </li>
+                                </div>
+                                <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLongTitle">Select Quantity below</h5>
+                                            </div>
+                                            <div class="modal-body">
+                                                <input type="number" />
+                                            </div>
+                                            <div class="modal-footer">
+                                                <a class="p-2 bg-green-lg collapsed btn-block text-center" data-dismiss="modal"> Save quantity </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="p-4 pb-3 mb-3" style="cursor:pointer;" data-toggle="modal" data-target="#modal4">
+                                    <li>
+                                        <div class="d-flex justify-content-between">
+                                            <h4 class="font-weight-bold">Pizza BBQ</h4>
+
+                                        </div>
+                                        <div class="detail">Onion, Bacon, BBQ sauce & Cheese
+                                            <span class="price">$7.99</span>
+                                        </div>
+                                    </li>
+                                </div>
+                                <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLongTitle">Select Quantity below</h5>
+                                            </div>
+                                            <div class="modal-body">
+                                                <input type="number" />
+                                            </div>
+                                            <div class="modal-footer">
+                                                <a class="p-2 bg-green-lg collapsed btn-block text-center" data-dismiss="modal"> Save quantity </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="p-1 pb-3" style="cursor:pointer;" data-toggle="modal" data-target="#modal5">
+                                    <li>
+                                        <div class="d-flex justify-content-between">
+                                            <h4 class="font-weight-bold">Pizza Swiss</h4>
+
+                                        </div>
+                                        <div class="detail">Different swiss cheeses and Secret sauce
+                                            <span class="price">$17.99</span>
+                                        </div>
+                                    </li>
+                                </div>
+                                <div class="modal fade" id="modal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLongTitle">Select Quantity below</h5>
+                                            </div>
+                                            <div class="modal-body">
+                                                <input type="number" />
+                                            </div>
+                                            <div class="modal-footer">
+                                                <a class="p-2 bg-green-lg collapsed btn-block text-center" data-dismiss="modal"> Save quantity </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </ul>
+                        </div>
+
+
+                        <div class="col-md-4 mt-4">
+                            <ul class="menu">
+                                <div class="p-4 pb-3 mb-3" style="cursor:pointer;" data-toggle="modal" data-target="#modal6">
+                                    <li>
+                                        <div class="d-flex justify-content-between">
+                                            <h4 class="font-weight-bold">Italian pizza</h4>
+                                        </div>
+                                        <div class="detail">Mozarella, Pomodoro & Parmagiano
+                                            <span class="price">$14.49</span>
+                                        </div>
+                                    </li>
+                                </div>
+                                <div class="modal fade" id="modal6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLongTitle">Select Quantity below</h5>
+                                            </div>
+                                            <div class="modal-body">
+                                                <input type="number" />
+                                            </div>
+                                            <div class="modal-footer">
+                                                <a class="p-2 bg-green-lg collapsed btn-block text-center" data-dismiss="modal"> Save quantity </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="p-4 pb-3 mb-3" style="cursor:pointer;" data-toggle="modal" data-target="#modal7">
+                                    <li>
+                                        <div class="d-flex justify-content-between">
+                                            <h4 class="font-weight-bold">Jabugo Ham</h4>
+
+                                        </div>
+                                        <div class="detail">Jabugo ham, eggs, cheese & Red Pepper
+                                            <span class="price">$20.50</span>
+                                        </div>
+                                    </li>
+                                </div>
+                                <div class="modal fade" id="modal7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLongTitle">Select Quantity below</h5>
+                                            </div>
+                                            <div class="modal-body">
+                                                <input type="number" />
+                                            </div>
+                                            <div class="modal-footer">
+                                                <a class="p-2 bg-green-lg collapsed btn-block text-center" data-dismiss="modal"> Save quantity </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="p-4 pb-3 mb-3" style="cursor:pointer;" data-toggle="modal" data-target="#modal8">
+                                    <li>
+                                        <div class="d-flex justify-content-between">
+                                            <h4 class="font-weight-bold">Cesar</h4>
+
+                                        </div>
+                                        <div class="detail">Cesar sauce, Toasts, cheese & Chicken
+                                            <span class="price">$9.99</span>
+                                        </div>
+                                    </li>
+                                </div>
+                                <div class="modal fade" id="modal8" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLongTitle">Select Quantity below</h5>
+                                            </div>
+                                            <div class="modal-body">
+                                                <input type="number" />
+                                            </div>
+                                            <div class="modal-footer">
+                                                <a class="p-2 bg-green-lg collapsed btn-block text-center" data-dismiss="modal"> Save quantity </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="p-4 pb-3 mb-3" style="cursor:pointer;" data-toggle="modal" data-target="#modal9">
+                                    <li>
+                                        <div class="d-flex justify-content-between">
+                                            <h4 class="font-weight-bold">Pizza BBQ</h4>
+
+                                        </div>
+                                        <div class="detail">Onion, Bacon, BBQ sauce & Cheese
+                                            <span class="price">$7.99</span>
+                                        </div>
+                                    </li>
+                                </div>
+                                <div class="modal fade" id="modal9" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLongTitle">Select Quantity below</h5>
+                                            </div>
+                                            <div class="modal-body">
+                                                <input type="number" />
+                                            </div>
+                                            <div class="modal-footer">
+                                                <a class="p-2 bg-green-lg collapsed btn-block text-center" data-dismiss="modal"> Save quantity </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="p-1 pb-3" style="cursor:pointer;" data-toggle="modal" data-target="#modal10">
+                                    <li>
+                                        <div class="d-flex justify-content-between">
+                                            <h4 class="font-weight-bold">Pizza Swiss</h4>
+
+                                        </div>
+                                        <div class="detail">Different swiss cheeses and Secret sauce
+                                            <span class="price">$17.99</span>
+                                        </div>
+                                    </li>
+                                </div>
+                                <div class="modal fade" id="modal10" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLongTitle">Select Quantity below</h5>
+                                            </div>
+                                            <div class="modal-body">
+                                                <input type="number" />
+                                            </div>
+                                            <div class="modal-footer">
+                                                <a class="p-2 bg-green-lg collapsed btn-block text-center" data-dismiss="modal"> Save quantity </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-4 mt-4">
+                            <ul class="menu">
+                                <div class="p-4 pb-3 mb-3" style="cursor:pointer;" data-toggle="modal" data-target="#modal11">
+                                    <li>
+                                        <div class="d-flex justify-content-between">
+                                            <h4 class="font-weight-bold">Italian pizza</h4>
+                                        </div>
+                                        <div class="detail">Mozarella, Pomodoro & Parmagiano
+                                            <span class="price">$14.49</span>
+                                        </div>
+                                    </li>
+                                </div>
+                                <div class="modal fade" id="modal11" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLongTitle">Select Quantity below</h5>
+                                            </div>
+                                            <div class="modal-body">
+                                                <input type="number" />
+                                            </div>
+                                            <div class="modal-footer">
+                                                <a class="p-2 bg-green-lg collapsed btn-block text-center" data-dismiss="modal"> Save quantity </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="p-4 pb-3 mb-3" style="cursor:pointer;" data-toggle="modal" data-target="#modal12">
+                                    <li>
+                                        <div class="d-flex justify-content-between">
+                                            <h4 class="font-weight-bold">Jabugo Ham</h4>
+
+                                        </div>
+                                        <div class="detail">Jabugo ham, eggs, cheese & Red Pepper
+                                            <span class="price">$20.50</span>
+                                        </div>
+                                    </li>
+                                </div>
+                                <div class="modal fade" id="modal12" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLongTitle">Select Quantity below</h5>
+                                            </div>
+                                            <div class="modal-body">
+                                                <input type="number" />
+                                            </div>
+                                            <div class="modal-footer">
+                                                <a class="p-2 bg-green-lg collapsed btn-block text-center" data-dismiss="modal"> Save quantity </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="p-4 pb-3 mb-3" style="cursor:pointer;" data-toggle="modal" data-target="#modal13">
+                                    <li>
+                                        <div class="d-flex justify-content-between">
+                                            <h4 class="font-weight-bold">Cesar</h4>
+
+                                        </div>
+                                        <div class="detail">Cesar sauce, Toasts, cheese & Chicken
+                                            <span class="price">$9.99</span>
+                                        </div>
+                                    </li>
+                                </div>
+                                <div class="modal fade" id="modal13" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLongTitle">Select Quantity below</h5>
+                                            </div>
+                                            <div class="modal-body">
+                                                <input type="number" />
+                                            </div>
+                                            <div class="modal-footer">
+                                                <a class="p-2 bg-green-lg collapsed btn-block text-center" data-dismiss="modal"> Save quantity </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="p-4 pb-3 mb-3" style="cursor:pointer;" data-toggle="modal" data-target="#modal14">
+                                    <li>
+                                        <div class="d-flex justify-content-between">
+                                            <h4 class="font-weight-bold">Pizza BBQ</h4>
+
+                                        </div>
+                                        <div class="detail">Onion, Bacon, BBQ sauce & Cheese
+                                            <span class="price">$7.99</span>
+                                        </div>
+                                    </li>
+                                </div>
+                                <div class="modal fade" id="modal14" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLongTitle">Select Quantity below</h5>
+                                            </div>
+                                            <div class="modal-body">
+                                                <input type="number" />
+                                            </div>
+                                            <div class="modal-footer">
+                                                <a class="p-2 bg-green-lg collapsed btn-block text-center" data-dismiss="modal"> Save quantity </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="p-1 pb-3" style="cursor:pointer;" data-toggle="modal" data-target="#modal15">
+                                    <li>
+                                        <div class="d-flex justify-content-between">
+                                            <h4 class="font-weight-bold">Pizza Swiss</h4>
+
+                                        </div>
+                                        <div class="detail">Different swiss cheeses and Secret sauce
+                                            <span class="price">$17.99</span>
+                                        </div>
+                                    </li>
+                                </div>
+                                <div class="modal fade" id="modal15" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLongTitle">Select Quantity below</h5>
+                                            </div>
+                                            <div class="modal-body">
+                                                <input type="number" />
+                                            </div>
+                                            <div class="modal-footer">
+                                                <a class="p-2 bg-green-lg collapsed btn-block text-center" data-dismiss="modal"> Save quantity </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+
+
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="title">Salads</div>
+                            <div class="voffset10"></div>
+                            <div class="subtitle">Exclusive and delicious salads</div>
+
+                        </div>
+
+                        <div class="col-md-4 mt-4">
+                            <ul class="menu">
+                                <div class="p-4 pb-3 mb-3" style="cursor:pointer;" data-toggle="modal" data-target="#modal16">
+                                    <li>
+                                        <div class="d-flex justify-content-between">
+                                            <h4 class="font-weight-bold">Italian Salad</h4>
+
+                                        </div>
+                                        <div class="detail">Mozarella, Pomodoro & Parmagiano
+                                            <span class="price">$14.49</span>
+                                        </div>
+                                    </li>
+                                </div>
+                                <div class="modal fade" id="modal16" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLongTitle">Select Quantity below</h5>
+                                            </div>
+                                            <div class="modal-body">
+                                                <input type="number" />
+                                            </div>
+                                            <div class="modal-footer">
+                                                <a class="p-2 bg-green-lg collapsed btn-block text-center" data-dismiss="modal"> Save quantity </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="p-4 pb-3 mb-3" style="cursor:pointer;" data-toggle="modal" data-target="#modal17">
+                                    <li>
+                                        <div class="d-flex justify-content-between">
+                                            <h4 class="font-weight-bold">Jabugo Ham</h4>
+
+                                        </div>
+                                        <div class="detail">Jabugo ham, eggs, cheese & Red Pepper
+                                            <span class="price">$20.50</span>
+                                        </div>
+                                    </li>
+                                </div>
+                                <div class="modal fade" id="modal17" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLongTitle">Select Quantity below</h5>
+                                            </div>
+                                            <div class="modal-body">
+                                                <input type="number" />
+                                            </div>
+                                            <div class="modal-footer">
+                                                <a class="p-2 bg-green-lg collapsed btn-block text-center" data-dismiss="modal"> Save quantity </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="p-4 pb-3 mb-3" style="cursor:pointer;" data-toggle="modal" data-target="#modal18">
+                                    <li>
+                                        <div class="d-flex justify-content-between">
+                                            <h4 class="font-weight-bold">Cesar</h4>
+
+                                        </div>
+                                        <div class="detail">Cesar sauce, Toasts, cheese & Chicken
+                                            <span class="price">$9.99</span>
+                                        </div>
+                                    </li>
+                                </div>
+                                <div class="modal fade" id="modal18" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLongTitle">Select Quantity below</h5>
+                                            </div>
+                                            <div class="modal-body">
+                                                <input type="number" />
+                                            </div>
+                                            <div class="modal-footer">
+                                                <a class="p-2 bg-green-lg collapsed btn-block text-center" data-dismiss="modal"> Save quantity </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="p-4 pb-3 mb-3" style="cursor:pointer;" data-toggle="modal" data-target="#modal19">
+                                    <li>
+                                        <div class="d-flex justify-content-between">
+                                            <h4 class="font-weight-bold">BBQ Salad</h4>
+
+                                        </div>
+                                        <div class="detail">Onion, Bacon, BBQ sauce & Cheese
+                                            <span class="price">$7.99</span>
+                                        </div>
+                                    </li>
+                                </div>
+                                <div class="modal fade" id="modal19" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLongTitle">Select Quantity below</h5>
+                                            </div>
+                                            <div class="modal-body">
+                                                <input type="number" />
+                                            </div>
+                                            <div class="modal-footer">
+                                                <a class="p-2 bg-green-lg collapsed btn-block text-center" data-dismiss="modal"> Save quantity </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="p-1 pb-3" style="cursor:pointer;" data-toggle="modal" data-target="#modal20">
+                                    <li>
+                                        <div class="d-flex justify-content-between">
+                                            <h4 class="font-weight-bold">Swiss Salad</h4>
+
+                                        </div>
+                                        <div class="detail">Different swiss cheeses and Secret sauce
+                                            <span class="price">$17.99</span>
+                                        </div>
+                                    </li>
+                                </div>
+                                <div class="modal fade" id="modal20" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLongTitle">Select Quantity below</h5>
+                                            </div>
+                                            <div class="modal-body">
+                                                <input type="number" />
+                                            </div>
+                                            <div class="modal-footer">
+                                                <a class="p-2 bg-green-lg collapsed btn-block text-center" data-dismiss="modal"> Save quantity </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-4 mt-4">
+                            <ul class="menu">
+                                <div class="p-4 pb-3 mb-3" style="cursor:pointer;" data-toggle="modal" data-target="#modal21">
+                                    <li>
+                                        <div class="d-flex justify-content-between">
+                                            <h4 class="font-weight-bold">Italian Salad</h4>
+
+                                        </div>
+                                        <div class="detail">Mozarella, Pomodoro & Parmagiano
+                                            <span class="price">$14.49</span>
+                                        </div>
+                                    </li>
+                                </div>
+                                <div class="modal fade" id="modal21" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLongTitle">Select Quantity below</h5>
+                                            </div>
+                                            <div class="modal-body">
+                                                <input type="number" />
+                                            </div>
+                                            <div class="modal-footer">
+                                                <a class="p-2 bg-green-lg collapsed btn-block text-center" data-dismiss="modal"> Save quantity </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="p-4 pb-3 mb-3" style="cursor:pointer;" data-toggle="modal" data-target="#modal22">
+                                    <li>
+                                        <div class="d-flex justify-content-between">
+                                            <h4 class="font-weight-bold">Jabugo Ham</h4>
+
+                                        </div>
+                                        <div class="detail">Jabugo ham, eggs, cheese & Red Pepper
+                                            <span class="price">$20.50</span>
+                                        </div>
+                                    </li>
+                                </div>
+                                <div class="modal fade" id="modal22" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLongTitle">Select Quantity below</h5>
+                                            </div>
+                                            <div class="modal-body">
+                                                <input type="number" />
+                                            </div>
+                                            <div class="modal-footer">
+                                                <a class="p-2 bg-green-lg collapsed btn-block text-center" data-dismiss="modal"> Save quantity </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="p-4 pb-3 mb-3" style="cursor:pointer;" data-toggle="modal" data-target="#modal23">
+                                    <li>
+                                        <div class="d-flex justify-content-between">
+                                            <h4 class="font-weight-bold">Cesar</h4>
+
+                                        </div>
+                                        <div class="detail">Cesar sauce, Toasts, cheese & Chicken
+                                            <span class="price">$9.99</span>
+                                        </div>
+                                    </li>
+                                </div>
+                                <div class="modal fade" id="modal23" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLongTitle">Select Quantity below</h5>
+                                            </div>
+                                            <div class="modal-body">
+                                                <input type="number" />
+                                            </div>
+                                            <div class="modal-footer">
+                                                <a class="p-2 bg-green-lg collapsed btn-block text-center" data-dismiss="modal"> Save quantity </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="p-4 pb-3 mb-3" style="cursor:pointer;" data-toggle="modal" data-target="#modal24">
+                                    <li>
+                                        <div class="d-flex justify-content-between">
+                                            <h4 class="font-weight-bold">BBQ Salad</h4>
+
+                                        </div>
+                                        <div class="detail">Onion, Bacon, BBQ sauce & Cheese
+                                            <span class="price">$7.99</span>
+                                        </div>
+                                    </li>
+                                </div>
+                                <div class="modal fade" id="modal24" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLongTitle">Select Quantity below</h5>
+                                            </div>
+                                            <div class="modal-body">
+                                                <input type="number" />
+                                            </div>
+                                            <div class="modal-footer">
+                                                <a class="p-2 bg-green-lg collapsed btn-block text-center" data-dismiss="modal"> Save quantity </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="p-1 pb-3" style="cursor:pointer;">
+                                    <li>
+                                        <div class="d-flex justify-content-between" data-toggle="modal" data-target="#modal25">
+                                            <h4 class="font-weight-bold">Swiss Salad</h4>
+
+                                        </div>
+                                        <div class="detail">Different swiss cheeses and Secret sauce
+                                            <span class="price">$17.99</span>
+                                        </div>
+                                    </li>
+                                </div>
+                                <div class="modal fade" id="modal25" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLongTitle">Select Quantity below</h5>
+                                            </div>
+                                            <div class="modal-body">
+                                                <input type="number" />
+                                            </div>
+                                            <div class="modal-footer">
+                                                <a class="p-2 bg-green-lg collapsed btn-block text-center" data-dismiss="modal"> Save quantity </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-4 mt-4">
+                            <ul class="menu">
+                                <div class="p-4 pb-3 mb-3" style="cursor:pointer;" data-toggle="modal" data-target="#modal26">
+                                    <li>
+                                        <div class="d-flex justify-content-between">
+                                            <h4 class="font-weight-bold">Italian Salad</h4>
+
+                                        </div>
+                                        <div class="detail">Mozarella, Pomodoro & Parmagiano
+                                            <span class="price">$14.49</span>
+                                        </div>
+                                    </li>
+                                </div>
+                                <div class="modal fade" id="modal26" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLongTitle">Select Quantity below</h5>
+                                            </div>
+                                            <div class="modal-body">
+                                                <input type="number" />
+                                            </div>
+                                            <div class="modal-footer">
+                                                <a class="p-2 bg-green-lg collapsed btn-block text-center" data-dismiss="modal"> Save quantity </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="p-4 pb-3 mb-3" style="cursor:pointer;" data-toggle="modal" data-target="#modal27">
+                                    <li>
+                                        <div class="d-flex justify-content-between">
+                                            <h4 class="font-weight-bold">Jabugo Ham</h4>
+
+                                        </div>
+                                        <div class="detail">Jabugo ham, eggs, cheese & Red Pepper
+                                            <span class="price">$20.50</span>
+                                        </div>
+                                    </li>
+                                </div>
+                                <div class="modal fade" id="modal27" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLongTitle">Select Quantity below</h5>
+                                            </div>
+                                            <div class="modal-body">
+                                                <input type="number" />
+                                            </div>
+                                            <div class="modal-footer">
+                                                <a class="p-2 bg-green-lg collapsed btn-block text-center" data-dismiss="modal"> Save quantity </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="p-4 pb-3 mb-3" style="cursor:pointer;" data-toggle="modal" data-target="#modal28">
+                                    <li>
+                                        <div class="d-flex justify-content-between">
+                                            <h4 class="font-weight-bold">Cesar</h4>
+
+                                        </div>
+                                        <div class="detail">Cesar sauce, Toasts, cheese & Chicken
+                                            <span class="price">$9.99</span>
+                                        </div>
+                                    </li>
+                                </div>
+                                <div class="modal fade" id="modal28" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLongTitle">Select Quantity below</h5>
+                                            </div>
+                                            <div class="modal-body">
+                                                <input type="number" />
+                                            </div>
+                                            <div class="modal-footer">
+                                                <a class="p-2 bg-green-lg collapsed btn-block text-center" data-dismiss="modal"> Save quantity </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="p-4 pb-3 mb-3" style="cursor:pointer;" data-toggle="modal" data-target="#modal29">
+                                    <li>
+                                        <div class="d-flex justify-content-between">
+                                            <h4 class="font-weight-bold">BBQ Salad</h4>
+
+                                        </div>
+                                        <div class="detail">Onion, Bacon, BBQ sauce & Cheese
+                                            <span class="price">$7.99</span>
+                                        </div>
+                                    </li>
+                                </div>
+                                <div class="modal fade" id="modal29" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLongTitle">Select Quantity below</h5>
+                                            </div>
+                                            <div class="modal-body">
+                                                <input type="number" />
+                                            </div>
+                                            <div class="modal-footer">
+                                                <a class="p-2 bg-green-lg collapsed btn-block text-center" data-dismiss="modal"> Save quantity </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="p-1 pb-3" style="cursor:pointer;" data-toggle="modal" data-target="#modal30">
+                                    <li>
+                                        <div class="d-flex justify-content-between">
+                                            <h4 class="font-weight-bold">Swiss Salad</h4>
+
+                                        </div>
+                                        <div class="detail">Different swiss cheeses and Secret sauce
+                                            <span class="price">$17.99</span>
+                                        </div>
+                                    </li>
+                                </div>
+                                <div class="modal fade" id="modal30" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLongTitle">Select Quantity below</h5>
+                                            </div>
+                                            <div class="modal-body">
+                                                <input type="number" />
+                                            </div>
+                                            <div class="modal-footer">
+                                                <a class="p-2 bg-green-lg collapsed btn-block text-center" data-dismiss="modal"> Save quantity </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+
+
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="title">Desserts</div>
+                            <div class="voffset10"></div>
+                            <div class="subtitle">Exclusive and delicious desserts</div>
+                        </div>
+
+                        <div class="col-md-4 mt-4">
+                            <ul class="menu">
+                                <div class="p-4 pb-3 mb-3" style="cursor:pointer;" data-toggle="modal" data-target="#modal31">
+                                    <li>
+                                        <div class="d-flex justify-content-between">
+                                            <h4 class="font-weight-bold">Creme Brulee</h4>
+
+                                        </div>
+                                        <div class="detail">Creme Anglaise, Vanilla Bean Ice Cream
+                                            <span class="price">$7.49</span>
+                                        </div>
+                                    </li>
+                                </div>
+                                <div class="modal fade" id="modal31" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLongTitle">Select Quantity below</h5>
+                                            </div>
+                                            <div class="modal-body">
+                                                <input type="number" />
+                                            </div>
+                                            <div class="modal-footer">
+                                                <a class="p-2 bg-green-lg collapsed btn-block text-center" data-dismiss="modal"> Save quantity </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="p-4 pb-3 mb-3" style="cursor:pointer;" data-toggle="modal" data-target="#modal32">
+                                    <li>
+                                        <div class="d-flex justify-content-between">
+                                            <h4 class="font-weight-bold">Warm chocolate</h4>
+
+                                        </div>
+                                        <div class="detail">Amarena Cherries, Kirsch Cream
+                                            <span class="price">$6.50</span>
+                                        </div>
+                                    </li>
+                                </div>
+                                <div class="modal fade" id="modal32" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLongTitle">Select Quantity below</h5>
+                                            </div>
+                                            <div class="modal-body">
+                                                <input type="number" />
+                                            </div>
+                                            <div class="modal-footer">
+                                                <a class="p-2 bg-green-lg collapsed btn-block text-center" data-dismiss="modal"> Save quantity </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="p-4 pb-3 mb-3" style="cursor:pointer;" data-toggle="modal" data-target="#modal33">
+                                    <li>
+                                        <div class="d-flex justify-content-between">
+                                            <h4 class="font-weight-bold">Cheese cake</h4>
+
+                                        </div>
+                                        <div class="detail">Cheese creme, ice cream, strawberry
+                                            <span class="price">$4.50</span>
+                                        </div>
+                                    </li>
+                                </div>
+                                <div class="modal fade" id="modal33" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLongTitle">Select Quantity below</h5>
+                                            </div>
+                                            <div class="modal-body">
+                                                <input type="number" />
+                                            </div>
+                                            <div class="modal-footer">
+                                                <a class="p-2 bg-green-lg collapsed btn-block text-center" data-dismiss="modal"> Save quantity </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="p-4 pb-3 mb-3" style="cursor:pointer;" data-toggle="modal" data-target="#modal34">
+                                    <li>
+                                        <div class="d-flex justify-content-between">
+                                            <h4 class="font-weight-bold">Apple Turnover</h4>
+
+                                        </div>
+                                        <div class="detail">Creme Anglaise, Vanilla Bean Ice Cream
+                                            <span class="price">$7.99</span>
+                                        </div>
+                                    </li>
+                                </div>
+                                <div class="modal fade" id="modal34" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLongTitle">Select Quantity below</h5>
+                                            </div>
+                                            <div class="modal-body">
+                                                <input type="number" />
+                                            </div>
+                                            <div class="modal-footer">
+                                                <a class="p-2 bg-green-lg collapsed btn-block text-center" data-dismiss="modal"> Save quantity </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="p-1 pb-3" style="cursor:pointer;" data-toggle="modal" data-target="#modal35">
+                                    <li>
+                                        <div class="d-flex justify-content-between">
+                                            <h4 class="font-weight-bold">Sorbet with fruit</h4>
+
+                                        </div>
+                                        <div class="detail">Lemon, orange, strawberry or mango
+                                            <span class="price">$8.50</span>
+                                        </div>
+                                    </li>
+                                </div>
+                                <div class="modal fade" id="modal35" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLongTitle">Select Quantity below</h5>
+                                            </div>
+                                            <div class="modal-body">
+                                                <input type="number" />
+                                            </div>
+                                            <div class="modal-footer">
+                                                <a class="p-2 bg-green-lg collapsed btn-block text-center" data-dismiss="modal"> Save quantity </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-4 mt-4">
+                            <ul class="menu">
+                                <div class="p-4 pb-3 mb-3" style="cursor:pointer;" data-toggle="modal" data-target="#modal36">
+                                    <li>
+                                        <div class="d-flex justify-content-between">
+                                            <h4 class="font-weight-bold">Creme Brulee</h4>
+
+                                        </div>
+                                        <div class="detail">Creme Anglaise, Vanilla Bean Ice Cream
+                                            <span class="price">$7.49</span>
+                                        </div>
+                                    </li>
+                                </div>
+                                <div class="modal fade" id="modal36" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLongTitle">Select Quantity below</h5>
+                                            </div>
+                                            <div class="modal-body">
+                                                <input type="number" />
+                                            </div>
+                                            <div class="modal-footer">
+                                                <a class="p-2 bg-green-lg collapsed btn-block text-center" data-dismiss="modal"> Save quantity </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="p-4 pb-3 mb-3" style="cursor:pointer;" data-toggle="modal" data-target="#modal37">
+                                    <li>
+                                        <div class="d-flex justify-content-between">
+                                            <h4 class="font-weight-bold">Warm chocolate</h4>
+
+                                        </div>
+                                        <div class="detail">Amarena Cherries, Kirsch Cream
+                                            <span class="price">$6.50</span>
+                                        </div>
+                                    </li>
+                                </div>
+                                <div class="modal fade" id="modal37" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLongTitle">Select Quantity below</h5>
+                                            </div>
+                                            <div class="modal-body">
+                                                <input type="number" />
+                                            </div>
+                                            <div class="modal-footer">
+                                                <a class="p-2 bg-green-lg collapsed btn-block text-center" data-dismiss="modal"> Save quantity </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="p-4 pb-3 mb-3" style="cursor:pointer;" data-toggle="modal" data-target="#modal38">
+                                    <li>
+                                        <div class="d-flex justify-content-between">
+                                            <h4 class="font-weight-bold">Cheese cake</h4>
+
+                                        </div>
+                                        <div class="detail">Cheese creme, ice cream, strawberry
+                                            <span class="price">$4.50</span>
+                                        </div>
+                                    </li>
+                                </div>
+                                <div class="modal fade" id="modal38" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLongTitle">Select Quantity below</h5>
+                                            </div>
+                                            <div class="modal-body">
+                                                <input type="number" />
+                                            </div>
+                                            <div class="modal-footer">
+                                                <a class="p-2 bg-green-lg collapsed btn-block text-center" data-dismiss="modal"> Save quantity </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="p-4 pb-3 mb-3" style="cursor:pointer;" data-toggle="modal" data-target="#modal39">
+                                    <li>
+                                        <div class="d-flex justify-content-between">
+                                            <h4 class="font-weight-bold">Apple Turnover</h4>
+
+                                        </div>
+                                        <div class="detail">Creme Anglaise, Vanilla Bean Ice Cream
+                                            <span class="price">$7.99</span>
+                                        </div>
+                                    </li>
+                                </div>
+                                <div class="modal fade" id="modal39" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLongTitle">Select Quantity below</h5>
+                                            </div>
+                                            <div class="modal-body">
+                                                <input type="number" />
+                                            </div>
+                                            <div class="modal-footer">
+                                                <a class="p-2 bg-green-lg collapsed btn-block text-center" data-dismiss="modal"> Save quantity </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="p-1 pb-3" style="cursor:pointer;" data-toggle="modal" data-target="#modal40">
+                                    <li>
+                                        <div class="d-flex justify-content-between">
+                                            <h4 class="font-weight-bold">Sorbet with fruit</h4>
+
+                                        </div>
+                                        <div class="detail">Lemon, orange, strawberry or mango
+                                            <span class="price">$8.50</span>
+                                        </div>
+                                    </li>
+                                </div>
+                                <div class="modal fade" id="modal40" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLongTitle">Select Quantity below</h5>
+                                            </div>
+                                            <div class="modal-body">
+                                                <input type="number" />
+                                            </div>
+                                            <div class="modal-footer">
+                                                <a class="p-2 bg-green-lg collapsed btn-block text-center" data-dismiss="modal"> Save quantity </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 mt-4">
+                            <ul class="menu">
+                                <div class="p-4 pb-3 mb-3" style="cursor:pointer;" data-toggle="modal" data-target="#modal41">
+                                    <li>
+                                        <div class="d-flex justify-content-between">
+                                            <h4 class="font-weight-bold">Creme Brulee</h4>
+
+                                        </div>
+                                        <div class="detail">Creme Anglaise, Vanilla Bean Ice Cream
+                                            <span class="price">$7.49</span>
+                                        </div>
+                                    </li>
+                                </div>
+                                <div class="modal fade" id="modal41" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLongTitle">Select Quantity below</h5>
+                                            </div>
+                                            <div class="modal-body">
+                                                <input type="number" />
+                                            </div>
+                                            <div class="modal-footer">
+                                                <a class="p-2 bg-green-lg collapsed btn-block text-center" data-dismiss="modal"> Save quantity </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="p-4 pb-3 mb-3" style="cursor:pointer;" data-toggle="modal" data-target="#modal42">
+                                    <li>
+                                        <div class="d-flex justify-content-between">
+                                            <h4 class="font-weight-bold">Warm chocolate</h4>
+
+                                        </div>
+                                        <div class="detail">Amarena Cherries, Kirsch Cream
+                                            <span class="price">$6.50</span>
+                                        </div>
+                                    </li>
+                                </div>
+                                <div class="modal fade" id="modal42" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLongTitle">Select Quantity below</h5>
+                                            </div>
+                                            <div class="modal-body">
+                                                <input type="number" />
+                                            </div>
+                                            <div class="modal-footer">
+                                                <a class="p-2 bg-green-lg collapsed btn-block text-center" data-dismiss="modal"> Save quantity </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="p-4 pb-3 mb-3" style="cursor:pointer;" data-toggle="modal" data-target="#modal43">
+                                    <li>
+                                        <div class="d-flex justify-content-between">
+                                            <h4 class="font-weight-bold">Cheese cake</h4>
+
+                                        </div>
+                                        <div class="detail">Cheese creme, ice cream, strawberry
+                                            <span class="price">$4.50</span>
+                                        </div>
+                                    </li>
+                                </div>
+                                <div class="modal fade" id="modal43" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLongTitle">Select Quantity below</h5>
+                                            </div>
+                                            <div class="modal-body">
+                                                <input type="number" />
+                                            </div>
+                                            <div class="modal-footer">
+                                                <a class="p-2 bg-green-lg collapsed btn-block text-center" data-dismiss="modal"> Save quantity </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="p-4 pb-3 mb-3" style="cursor:pointer;" data-toggle="modal" data-target="#modal44">
+                                    <li>
+                                        <div class="d-flex justify-content-between">
+                                            <h4 class="font-weight-bold">Apple Turnover</h4>
+
+                                        </div>
+                                        <div class="detail">Creme Anglaise, Vanilla Bean Ice Cream
+                                            <span class="price">$7.99</span>
+                                        </div>
+                                    </li>
+                                </div>
+                                <div class="modal fade" id="modal44" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLongTitle">Select Quantity below</h5>
+                                            </div>
+                                            <div class="modal-body">
+                                                <input type="number" />
+                                            </div>
+                                            <div class="modal-footer">
+                                                <a class="p-2 bg-green-lg collapsed btn-block text-center" data-dismiss="modal"> Save quantity </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="p-1 pb-3" style="cursor:pointer;" data-toggle="modal" data-target="#modal45">
+                                    <li>
+                                        <div class="d-flex justify-content-between">
+                                            <h4 class="font-weight-bold">Sorbet with fruit</h4>
+
+                                        </div>
+                                        <div class="detail">Lemon, orange, strawberry or mango
+                                            <span class="price">$8.50</span>
+                                        </div>
+                                    </li>
+                                </div>
+                                <div class="modal fade" id="modal45" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLongTitle">Select Quantity below</h5>
+                                            </div>
+                                            <div class="modal-body">
+                                                <input type="number" />
+                                            </div>
+                                            <div class="modal-footer">
+                                                <a class="p-2 bg-green-lg collapsed btn-block text-center" data-dismiss="modal"> Save quantity </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-3 border-left">
+                    <div>
+                        <ul class="list-unstyled">
+                            <li>
+                                <h3>Your Cart</h3>
+                            </li>
+
+
+                            <li>
+                                <div>Delivering at ZIP: 54500</div>
+                                <input placeholder="MM/DD/YYY" disabled class="mt-3" />
+                                <div class="text-center text-black">Your order at Hampton Plaza Shopping Center, 2872 Wilma Rudolph Boulevard, Clarksville, TN
+                                    37040:
+                                </div>
+                            </li>
+
+                            <li>
+                                <ul class="list-unstyled">
+                                    <li class="d-flex justify-content-between">
+                                        <span id="name"></span>
+                                        <span class="text-dark font-weight-bold" id="price"></span>
+                                    </li>
+                                    <li class="d-flex justify-content-between">
+                                        <span>1 X SPAGHETTI & CHICKEN</span>
+                                        <span class="text-dark font-weight-bold">$14.49</span>
+                                    </li>
+                                    <li class="d-flex justify-content-between">
+                                        <span>1 X SPAGHETTI TOMATO SAUCE & GRATED CHEESE </span>
+                                        <span class="text-dark font-weight-bold">$14.49</span>
+                                    </li>
+                                    <li class="d-flex justify-content-between">
+                                        <span>1 X TOMATO CUCUMBER SALAD </span>
+                                        <span class="text-dark font-weight-bold">$14.49</span>
+                                    </li>
+                                    <li class="d-flex justify-content-between">
+                                        <span>1 X AUTHENTIC PAN PIZZA </span>
+                                        <span class="text-dark font-weight-bold">$14.49</span>
+                                    </li>
+                                    <li class="d-flex justify-content-between">
+                                        <span>1 X AUTHENTIC PAN PIZZA </span>
+                                        <span class="text-dark font-weight-bold">$14.49</span>
+                                    </li>
+                                    <li class="d-flex justify-content-between">
+                                        <span>1 X AUTHENTIC PAN PIZZA </span>
+                                        <span class="text-dark font-weight-bold">$14.49</span>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <hr class="mt-5">
+
+                            <li>
+                                <ul class="list-unstyled">
+                                    <li class="d-flex justify-content-between">
+                                        <small class="text-dark">Subtotal</small>
+                                        <span class="text-secondary">$14.49</span>
+                                    </li>
+                                    <li class="d-flex justify-content-between">
+                                        <small class="text-dark">Delivery fee</small>
+                                        <span class="text-secondary">$14.49</span>
+                                    </li>
+                                    <li class="d-flex justify-content-between">
+                                        <small class="text-dark">Tax</small>
+                                        <span class="text-secondary">$14.49</span>
+                                    </li>
+                                    <li class="d-flex justify-content-between">
+                                        <span class="text-dark font-weight-bold">Total</span>
+                                        <span class="text-dark font-weight-bold">$14.49</span>
+                                    </li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <div>
+                        <a class="p-2 bg-green-lg collapsed btn-block text-center" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+                            aria-controls="collapseExample">
+                            Checkout
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <hr />
+        </div>
+        <div class="voffset60"></div>
+    </section>
+
+
+    <!-- BEGIN RESERVATIONS SECTION -->
+    <section id="collapseExample" class="collapse">
+        <div class="container">
+            <div class="row pb-5 justify-content-md-center">
+                <div class="col-md-12">
+                    <h2 class="section-title">Checkout with your Credit Card</h2>
+                </div>
+                <div class="col-md-6 mx-auto">
+                    <div class="section-subtitle mb-0">
+                        Please provide your credit card details so we place your order as soon as possible!
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <form class="row justify-content-between mt-5">
+                        <input type="text" id="first" name="first" placeholder="First Name" class="text date required col mr-3">
+                        <input type="text" id="last" name="last" placeholder="Last Name" class="text zip required col">
+                    </form>
+                    <form class="row justify-content-between mt-2">
+                        <input type="text" id="address1" name="address1" placeholder="Address 1" class="text date required col mr-3">
+                        <input type="text" id="address2" name="address2" placeholder="Address 2" class="text date required col">
+                    </form>
+                    <form class="row justify-content-between mt-2">
+                        <input type="text" id="city" name="city" placeholder="City" class="text date required col mr-3">
+                        <select class="text date required col mr-3 p-2 h-43" id="state" style="border-color:#cbc8c8 !important;">
+                            <option selected style="color:#cbc8c8;">State</option>
+                            <option value="1">California</option>
+                            <option value="2">Texas</option>
+                            <option value="3">Florida</option>
+                            <option value="1">Hawaii</option>
+                            <option value="1">Maryland</option>
+                            <option value="1">...</option>
+                        </select>
+                        <input type="text" id="zip" name="zip" placeholder="Zip" class="text date required col-2">
+                    </form>
+                    <form class="row justify-content-between mt-2">
+                        <input type="tel" id="contactNumber" name="contactNumber" placeholder="Contact Number" class="text date required col">
+                    </form>
+                    <div class="d-flex mt-2 mb-4">
+                        <img src="masterCard.jpg" width="50px" height="35px" class="mr-3" style="height:35px !important" />
+                        <img src="AmericanExpress.png" width="50px" height="35px" class="mr-3" style="height:35px !important" />
+                        <img src="Visa.png" width="50px" height="35px" class="mr-3" style="height:35px !important" />
+                        <img src="discover.jpeg" width="50px" height="35px" style="height:35px !important" />
+                    </div>
+                    <form class="row justify-content-between mt-2">
+                        <input type="tel" id="creditCardNumber" name="creditCardNumber" placeholder="Credit Card Number" class="text date required col mr-3">
+                        <input type="tel" id="cvv" name="cvv" placeholder="CVV" class="text date required col">
+                    </form>
+                    <form class="row mt-2">
+                        <div class="col-req d-flex p-0">
+                            <select class="text date required w-100 p-2" id="expiryMonth" style="border-color:#cbc8c8 !important;">
+                                <option selected>Expiraty Month</option>
+                                <option value="1">01</option>
+                                <option value="2">02</option>
+                                <option value="3">03</option>
+                                <option value="1">04</option>
+                                <option value="2">05</option>
+                                <option value="3">06</option>
+                                <option value="1">07</option>
+                                <option value="2">08</option>
+                                <option value="3">09</option>
+                                <option value="1">10</option>
+                                <option value="2">11</option>
+                                <option value="3">12</option>
+                            </select>
+                            <select class="text date required p-2 w-100 ml-3" id="expiryYear" style="border-color:#cbc8c8 !important;">
+                                <option selected>Expiraty Year</option>
+                                <option value="3">2018</option>
+                                <option value="1">2019</option>
+                                <option value="2">2020</option>
+                                <option value="3">2021</option>
+                                <option value="1">2022</option>
+                                <option value="2">2023</option>
+                                <option value="3">2024</option>
+                                <option value="1">2025</option>
+                                <option value="2">2026</option>
+                                <option value="3">2027</option>
+                                <option value="3">2028</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-4 mt-4">
+                    <button type="button" class="p-3 bg-green-lg collapsed text-center btn-block">Place Order</button>
+                </div>
+                <div class="alert alert-success alert-dismissable mt-5 fade show">
+                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                    Success!Your order placed successfully with reference number 123221345. Please note this to track your order. Thank you!
+                </div>
+
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+    <!-- BEGIN FOOTER -->
+    <footer id="footer" class="section" role="contentinfo">
+        <div class="container">
+            <ul class="social">
+                <li>
+                    <a href="#" class="icon tw">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="icon fb">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="icon in">
+                        <i class="fa fa-pinterest"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="icon go">
+                        <i class="fa fa-google-plus"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <!-- END FOOTER -->
+    <a href="#0" class="cd-top">Top</a>
+    <!-- BEGIN Scripts-->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('button').click(function () {
+                $('.alert').show()
+            })
+        });
+    </script>
+
+
+    <script type="text/javascript">
+        $(".p-4").click(function () {
+            $(this).toggleClass('active');
+        });
+    </script>
+
+    <script type="text/javascript">
+        function addText() {
+            document.getElementById("name").innerHTML = document.getElementsByClassName('active').innerHTML;
+            console.log('value:', Document.getElementById('name'.innerHTML));
+        };
+    </script>
+
+
+    <script src="js/modernizr.custom.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/pathLoader.js"></script>
+    <script src="js/owl-carousel/owl.carousel.min.js"></script>
+    <script src="js/jquery.inview.js"></script>
+    <script src="js/jquery.nav.js"></script>
+    <script src="js/jquery.mb.YTPlayer.js"></script>
+    <script src="js/jquery.form.js"></script>
+    <script src="js/jquery.validate.js"></script>
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+    <script src="js/default.js"></script>
+    <script src="js/plugins.js"></script>
+    <script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+    <script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/jquery.swipebox.js"></script>
+
+    <script type="text/javascript">
+        ; (function ($) {
+
+            $('.swipebox').swipebox();
+
+        })(jQuery);
+    </script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+
+
+
+    <!-- END Scripts -->
+</body>
+
+</html>

@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Order Now</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gijgo@1.8.2/combined/js/gijgo.min.js" type="text/javascript"></script>
+    <link href="https://cdn.jsdelivr.net/npm/gijgo@1.8.2/combined/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+    <!-- GOOGLE FONTS -->
+    <link href='http://fonts.googleapis.com/css?family=Yellowtail%7cCabin:400,500,600,700,400italic,700italic%7cLibre+Baskerville:400italic%7cGreat+Vibes%7cOswald:400,300,700%7cOpen+Sans:600italic,700'
+        rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700' rel='stylesheet'
+        type='text/css'>
+
+    <!-- META TAGS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- CSS STYLESHEETS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/elixir.css" />
+    <link href="js/owl-carousel/owl.carousel.css" rel="stylesheet">
+    <link href="js/owl-carousel/owl.theme.css" rel="stylesheet">
+    <link href="js/owl-carousel/owl.transitions.css" rel="stylesheet">
+    <link href="css/YTPlayer.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/swipebox.css">
+
+
+    <!-- Colors Style -->
+    <link rel="stylesheet" href="css/color/wine.css">
+    <link rel="stylesheet" href="css/color/gold.css">
+    <link rel="stylesheet" href="css/color/bluegray.css">
+    <link rel="stylesheet" href="css/color/orange.css">
+    <link rel="stylesheet" href="css/color/black.css">
+    <link rel="stylesheet" href="css/color/yellow.css">
+    <link rel="stylesheet" href="css/color/green.css">
+    <link rel="stylesheet" href="css/color/red.css">
+
+    <style>
+        .list-group-item.active {
+            z-index: 2;
+            background-color: #309f52;
+            border-color: #309f52;
+            transition: background-color ease-in 0.25s;
+        }
+
+        .list-group-item.active .text-dark {
+            color: #fff !important;
+            transition: color ease-in 0.25s;
+        }
+
+        input {
+            color: black !important;
+        }
+
+        .section {
+            margin-bottom: 0px;
+            padding-top: 66px;
+            background: #fff;
+            overflow: hidden;
+        }
+
+        section.menu {
+            background: none;
+        }
+
+        section.menu h3 {
+            margin-bottom: 0px !important;
+            font-size: 16px !important;
+        }
+
+        .minHeight70 {
+            min-height: 70px;
+        }
+
+        .form-control:focus {
+            box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, .5);
+            border-color: #dc3545;
+        }
+
+        #header {
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            z-index: 1001;
+            width: 100%;
+            height: 90px;
+            background-color: #fff !important;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.11);
+            padding-top: 20px;
+        }
+
+        #header .menu-item a {
+            color: #818181;
+        }
+
+        #header.overflow {
+            top: -100px;
+            left: 0px;
+            background-color: #fff !important;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.11);
+            -webkit-transition: all 0.3s ease-in;
+            -o-transition: all 0.3s ease-in;
+            transition: all 0.3s ease-in;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .bg-green:hover {
+            background-color: #309f52 !important;
+            color: white !important;
+            transition: 0.5s all ease;
+            font-size: 13px;
+        }
+
+        .bg-green {
+            background-color: transparent !important;
+            color: #309f52 !important;
+            transition: 0.5s all ease;
+            font-size: 13px;
+        }
+
+        .bg-green-lg:hover {
+            border: 3px solid #309f52;
+            background-color: #309f52 !important;
+            color: white !important;
+            transition: 0.5s all ease;
+            font-size: 20px;
+        }
+
+        .bg-green-lg {
+            border: 3px solid #309f52;
+            background-color: transparent !important;
+            color: #309f52 !important;
+            transition: 0.5s all ease;
+            font-size: 20px;
+        }
+
+        input[type=radio] {
+            width: 19px;
+            height: 19px;
+            background-color: #B6B5B5;
+            border-radius: 50%;
+        }
+
+        input[type=radio]:focus {
+            width: 19px;
+            height: 19px;
+            background-color: #309f52;
+            border-radius: 50%;
+            border: 4px solid #B6B5B5;
+        }
+
+        .f-16 {
+            font-size: 16px;
+        }
+
+        @media only screen and (max-width: 767px) {
+            .section .text {
+                margin-top: 0px;
+            }
+            .section {
+                text-align: left !important;
+            }
+            @media only screen and (max-width: 1024px) {
+                .section .title {
+                    font-size: 30px;
+                    line-height: 50px;
+                    padding-top: 20px;
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <!-- BEGIN HEADER -->
+    <header id="header" role="banner" class="">
+        <div class="jt_row container">
+            <div class="navbar-header page-scroll">
+                <!-- <button type="button" class="navbar-toggle menu" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button> -->
+                <a class="navbar-brand normal logo" href="#home">
+                    <div class="logo_elixir dark"></div>
+                </a>
+                <a class="navbar-brand mini" href="#home">
+                    <div class="logo_elixir dark"></div>
+                </a>
+                <a class="navbar-brand mini darker" href="#home">
+                    <div class="logo_elixir dark"></div>
+                </a>
+            </div>
+
+            <!-- BEGIN NAVIGATION MENU-->
+            <!-- <nav class="collapse navbar-collapse navbar-right navbar-main-collapse" role="navigation">
+                <ul id="nav" class="nav navbar-nav navigation">
+                    <li class="page-scroll menu-item">
+                        <a href="#home-slider">Home</a>
+                    </li>
+                    <li class="page-scroll menu-item">
+                        <a href="#about">About</a>
+                    </li>
+                    <li class="page-scroll menu-item">
+                        <a href="menu.html">Menu</a>
+                    </li>
+                    <li class="page-scroll menu-item">
+                        <a href="#gallery">Gallery</a>
+                    </li>
+                    <li class="page-scroll menu-item">
+                        <a href="#reservations">Reservations</a>
+                    </li>
+                    <li class="page-scroll menu-item">
+                        <a href="#contact">Location</a>
+                    </li>
+                    <li>
+                        <a href="Order.html" class="p-4 border border-success bg-green">Order Now</a>
+                    </li>
+                </ul>
+            </nav> -->
+            <!-- EN NAVIGATION MENU -->
+        </div>
+    </header>
+    <!-- END HEADER -->
+
+
+
+
+
+
+
+
+    <!-- BEGIN MENU SECTION -->
+    <section id="menu" class="section menu" style="min-height:auto;">
+
+        <div class="container-fluid p-0">
+            <div class="col-md-12 jt_col column_container">
+                <div class="voffset100" />
+                <div class="title first">Order Now</div>
+                <div class="voffset10"></div>
+                <div class="subtitle">Tell us where it's going, or where you'd like to pick up.</div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-11 my-5 col-md-6">
+
+                    <form>
+                        <div class="form-group">
+                        </div>
+                    </form>
+                    <form>
+                        <input id="date" name="date" placeholder="MM/DD/YYY" type="text" class="text date required" />
+                        <input type="text" id="zip" name="zip" placeholder="Zip" class="text zip required">
+                    </form>
+                    <hr />
+                    <form>
+                        <label for="inputZip" class="col-form-label">
+                            <h2>Please select one:</h2>
+                        </label>
+                        <div class="row">
+                            <div class="col-12 col-sm-10 mt-4 mb-5">
+                                <div class="d-flex">
+                                    <input type="radio" name="radiogroup" class="mr-3 my-radio mt-0" id="pick">
+                                    <label for="pick" class="f-16">I will pick up</label>
+                                </div>
+                                <div class="d-flex">
+                                    <input type="radio" name="radiogroup" class="mr-3 my-radio mt-0" id="deliver">
+                                    <label for="deliver" class="f-16">I prefer the order to be delivered</label>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-6">
+                    <a href="Order.html" class="p-4 bg-green-lg collapsed btn-block text-center search" data-toggle="collapse" data-target="#collapseExample"
+                        aria-expanded="true" aria-controls="collapseExample">Search nearby stores</a>
+                    <div class="collapse" id="collapseExample">
+                        <div class="list-group" id="list-tab" role="tablist">
+                            <a class="list-group-item list-group-item-action p-4 d-flex align-items-center" id="list-home-list" data-toggle="list" href="PlaceOrder.html"
+                                role="tab" aria-controls="home">
+                                <img src="building.jpg" width="100px" height="140px" class="mr-3 d-none d-sm-block" style="height: 140px !important; width: 100px !important;"
+                                />
+                                <h3 class="text-dark">Hampton Plaza Shopping Center, 2872 Wilma Rudolph Boulevard, Clarksville, TN 37040</h3>
+                            </a>
+                            <a class="list-group-item list-group-item-action d-flex p-4 align-items-center" id="list-profile-list" data-toggle="list"
+                                href="PlaceOrder.html" role="tab" aria-controls="profile">
+                                <img src="building.jpg" width="100px" height="140px" class="mr-3 d-none d-sm-block" style="height: 140px !important; width: 100px !important;"
+                                />
+                                <h3 class="text-dark">German Health Maze, 4533 Main Boulevard, Ponca, NY 37040</h3>
+                            </a>
+                            <a class="list-group-item list-group-item-action d-flex p-4 align-items-center" id="list-messages-list" data-toggle="list"
+                                href="PlaceOrder.html" role="tab" aria-controls="messages">
+                                <img src="building.jpg" width="100px" height="140px" class="mr-3 d-none d-sm-block" style="height: 140px !important; width: 100px !important;"
+                                />
+                                <h3 class="text-dark">Hilton Watches Tower, 1209 NY-City Yard, NY 37040</h3>
+                            </a>
+                            <a class="list-group-item list-group-item-action p-4 d-flex align-items-center" id="list-home-list" data-toggle="list" href="PlaceOrder.html"
+                                role="tab" aria-controls="home">
+                                <img src="building.jpg" width="100px" height="140px" class="mr-3 d-none d-sm-block" style="height: 140px !important; width: 100px !important;"
+                                />
+                                <h3 class="text-dark">Hampton Plaza Shopping Center, 2872 Wilma Rudolph Boulevard, Clarksville, TN 37040</h3>
+                            </a>
+                        </div>
+
+                        <a href="PlaceOrder.html" class="p-4 bg-green-lg collapsed btn-block text-center mt-5">Continue</a>
+                    </div>
+                </div>
+            </div>
+            </form>
+
+        </div>
+    </section>
+    <!-- END MENU SECTION -->
+
+
+    <!-- BEGIN FOOTER -->
+    <footer id="footer" class="section" role="contentinfo">
+        <div class="container">
+            <ul class="social">
+                <li>
+                    <a href="#" class="icon tw">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="icon fb">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="icon in">
+                        <i class="fa fa-pinterest"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="icon go">
+                        <i class="fa fa-google-plus"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <!-- END FOOTER -->
+    <a href="#0" class="cd-top">Top</a>
+    <!-- BEGIN Scripts-->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <script src="js/modernizr.custom.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/pathLoader.js"></script>
+    <script src="js/owl-carousel/owl.carousel.min.js"></script>
+    <script src="js/jquery.inview.js"></script>
+    <script src="js/jquery.nav.js"></script>
+    <script src="js/jquery.mb.YTPlayer.js"></script>
+    <script src="js/jquery.form.js"></script>
+    <script src="js/jquery.validate.js"></script>
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+    <script src="js/default.js"></script>
+    <script src="js/plugins.js"></script>
+    <script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+    <script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/jquery.swipebox.js"></script>
+    <script type="text/javascript">
+        ; (function ($) {
+
+            $('.swipebox').swipebox();
+
+        })(jQuery);
+    </script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+    <!-- Isolated Version of Bootstrap, not needed if your site already uses Bootstrap -->
+    <link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" />
+
+    <!-- Bootstrap Date-Picker Plugin -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"
+    />
+    <script>
+        $(document).ready(function () {
+            var date_input = $('input[name="date"]'); //our date input has the name "date"
+            var container = $('.bootstrap-iso form').length > 0 ? $('.bootstrap-iso form').parent() : "body";
+            var options = {
+                format: 'mm/dd/yyyy',
+                container: container,
+                todayHighlight: true,
+                autoclose: true,
+            };
+            date_input.datepicker(options);
+        })
+    </script>
+
+
+    <script type="text/javascript">
+        $(".col-12 .search").click(function () {
+            $(this).toggleClass('hide');
+        });
+    </script>
+
+    <!-- END Scripts -->
+
+
+</body>
+
+</html>
